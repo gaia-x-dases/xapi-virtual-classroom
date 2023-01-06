@@ -39,7 +39,7 @@ The virtual classroom session has started. The session is initialized when the f
          ]
       },
       "extensions": {
-         "http://id.tincanapi.com/extension/planned-duration": 120,
+         "http://id.tincanapi.com/extension/planned-duration": "PT2",
          "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"
       }
    },
