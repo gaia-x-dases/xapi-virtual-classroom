@@ -51,7 +51,7 @@ A participant has joined the virtual classroom session.
 ## Properties
 
 - `object.definition.type`: INCLUDED, must be `http://id.tincanapi.com/activitytype/webinar`.
-- `verb.id`: INCLUDED, must be `http://activitystrea.ms/join`
+- `verb.id`: INCLUDED, must be `http://activitystrea.ms/join`.
 
 ## Rules
 
