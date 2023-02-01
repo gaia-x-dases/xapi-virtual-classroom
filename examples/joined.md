@@ -48,9 +48,13 @@ A participant has joined the virtual classroom session.
 }
 ```
 
-## Rules
+## Properties
 
 - `object.definition.type`: INCLUDED, must be `http://id.tincanapi.com/activitytype/webinar`.
+- `verb.id`: INCLUDED, must be `http://activitystrea.ms/join`
+
+## Rules
+
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
 - `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
 - `context.extensions.https://w3id.org/xapi/virtual-classroom/extension/camera-activated`: RECOMMENDED (level 3).
