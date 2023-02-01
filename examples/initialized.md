@@ -47,7 +47,10 @@ The virtual classroom session has started. The session is initialized when the f
 }
 ```
 
-## Rules
+## Properties
+
+- `verb.id`: INCLUDED, must be `http://adlnet.gov/expapi/verbs/initialized`
+- `object.definition.type`: INCLUDED, must be `http://id.tincanapi.com/activitytype/webinar`.
 
 - `object.definition.type`: INCLUDED, must be `http://id.tincanapi.com/activitytype/webinar`.
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
