@@ -11,10 +11,10 @@ Tracking participation is usually the first thing we want to do from a learning 
 
 All these statements are **MANDATORY** in order to comply with this profile.
 
-- [Initialized](./examples/initialized.md)
-- [Terminated](./examples/terminated.md)
-- [Joined](./examples/joined.md)
-- [Left](./examples/left.md)
+- [Initialized](./statements/mandatory/initialized.md)
+- [Terminated](./statements/mandatory/terminated.md)
+- [Joined](./statements/mandatory/joined.md)
+- [Left](./statements/mandatory/left.md)
 
 ### Main interactions
 
@@ -24,10 +24,10 @@ or extract their feedbacks.
 
 All these statements are **HIGHLY RECOMMENDED**.
 
-- [Shared screen](./examples/shared-screen.md)
-- [Raised hand](./examples/raised-hand.md)
-- [Answered poll](./examples/answered-poll.md)
-- [Posted public message](./examples/posted-public-message.md)
+- [Shared screen](./statements/recommended/shared-screen.md)
+- [Raised hand](./statements/recommended/raised-hand.md)
+- [Answered poll](./statements/recommended/answered-poll.md)
+- [Posted public message](./statements/recommended/posted-public-message.md)
 
 ### Other interactions
 
@@ -35,14 +35,14 @@ These statements give more details on the interactions during a virtual classroo
 
 All these statements are **OPTIONAL**.
 
-- [Muted](./examples/muted.md)
-- [Unmuted](./examples/unmuted.md)
-- [Started camera](./examples/started-camera.md)
-- [Stopped camera](./examples/stopped-camera.md)
-- [Unshared screen](./examples/unshared-screen.md)
-- [Lowered hand](./examples/lowered-hand.md)
-- [Created poll](./examples/created-poll.md)
-- [Posted private message](./examples/posted-private-message.md)
+- [Muted](./statements/optional/muted.md)
+- [Unmuted](./statements/optional/unmuted.md)
+- [Started camera](./statements/optional/started-camera.md)
+- [Stopped camera](./statements/optional/stopped-camera.md)
+- [Unshared screen](./statements/optional/unshared-screen.md)
+- [Lowered hand](./statements/optional/lowered-hand.md)
+- [Created poll](./statements/optional/created-poll.md)
+- [Posted private message](./statements/optional/posted-private-message.md)
 
 ## Contributors
 
