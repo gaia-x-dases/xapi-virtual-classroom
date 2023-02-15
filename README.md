@@ -42,7 +42,6 @@ All these statements are **OPTIONAL**.
 - [Unshared screen](./statements/optional/unshared-screen.md)
 - [Lowered hand](./statements/optional/lowered-hand.md)
 - [Created poll](./statements/optional/created-poll.md)
-- [Posted private message](./statements/optional/posted-private-message.md)
 
 ## Contributors
 
