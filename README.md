@@ -49,3 +49,4 @@ All these statements are **OPTIONAL**.
 | Github user  | Name            | Company/Institution         |
 |----------------|-----------------|-----------------------------|
 | [@quitterie-lcs](https://github.com/quitterie-lcs) | Quitterie Lucas | [France Université Numérique](https://www.france-universite-numerique.fr/en/) |
+| [@sfraysse](https://github.com/sfraysse) | Sébastien Fraysse | [fraysse.eu](https://fraysse.eu) |
