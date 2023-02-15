@@ -9,44 +9,39 @@ A user has unshared the screen.
 ```json
 {
    "actor": {
-      "objectType": "Agent",
       "account": {
          "name": "john",
          "homePage": "http://gaiax-virtualclassroom.org"
       }
    },
    "verb": {
-      "id": "http://schema.dases.eu/xapi/profile/virtual-classroom/verb/unshared-screen"
+      "id": "https://w3id.org/xapi/virtual-classroom/verbs/unshared-screen"
    },
    "object": {
-      "objectType": "Agent",
-      "account": {
-         "name": "john",
-         "homePage": "http://gaiax-virtualclassroom.org"
+      "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
+      "definition": {
+         "type": "http://id.tincanapi.com/activitytype/webinar",
+         "name": {
+            "en": "xAPI 101"
+         }
       }
    },
    "context": {
+      "registration": "4eb0e063-669b-479a-86b3-f9be9ac88a1d",
       "contextActivities": {
-         "parent": [
-            {
-               "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
-               "definition": {
-                  "type": "http://id.tincanapi.com/activitytype/webinar",
-                  "name": {
-                     "en": "Demonstration webinar"
-                  }
-               }
-            }
-         ],
          "category": [
             {
-               "id": "http://schema.dases.eu/xapi/profile/virtual-classroom/templates/unshared-screen",
+               "id": "https://w3id.org/xapi/virtual-classroom",
                "definition": {
                   "type": "http://adlnet.gov/expapi/activities/profile"
                }
             }
          ]
+      },
+      "extensions": {
+         "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"
       }
-   }
+   },
+   "timestamp": "2016-06-09T15:34:26.887Z"
 }
 ```

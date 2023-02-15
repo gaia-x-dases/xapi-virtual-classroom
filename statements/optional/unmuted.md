@@ -9,48 +9,39 @@ A user has been unmuted. The action has been done by the participant itself or b
 ```json
 {
    "actor": {
-      "objectType": "Agent",
       "account": {
          "name": "john",
          "homePage": "http://gaiax-virtualclassroom.org"
       }
    },
    "verb": {
-      "id": "http://schema.dases.eu/xapi/profile/virtual-classroom/verb/unmuted"
+      "id": "https://w3id.org/xapi/virtual-classroom/verbs/unmuted"
    },
    "object": {
-      "objectType": "Agent",
-      "account": {
-         "name": "john",
-         "homePage": "http://gaiax-virtualclassroom.org"
+      "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
+      "definition": {
+         "type": "http://id.tincanapi.com/activitytype/webinar",
+         "name": {
+            "en": "xAPI 101"
+         }
       }
    },
    "context": {
-      "extensions": {
-         "https://w3id.org/xapi/video/extensions/volume": 1,
-         "http://schema.dases.eu/xapi/profile/virtual-classroom/extension/camera-activated": true
-      },
+      "registration": "4eb0e063-669b-479a-86b3-f9be9ac88a1d",
       "contextActivities": {
-         "parent": [
-            {
-               "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
-               "definition": {
-                  "type": "http://id.tincanapi.com/activitytype/webinar",
-                  "name": {
-                     "en": "Demonstration webinar"
-                  }
-               }
-            }
-         ],
          "category": [
             {
-               "id": "http://schema.dases.eu/xapi/profile/virtual-classroom/templates/unmuted",
+               "id": "https://w3id.org/xapi/virtual-classroom",
                "definition": {
                   "type": "http://adlnet.gov/expapi/activities/profile"
                }
             }
          ]
+      },
+      "extensions": {
+         "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"
       }
-   }
+   },
+   "timestamp": "2016-06-09T15:34:26.887Z"
 }
 ```
