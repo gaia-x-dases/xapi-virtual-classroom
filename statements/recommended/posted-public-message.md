@@ -2,24 +2,22 @@
 
 ## Description
 
-A participant has posted a public message in a chat.
+A participant has posted a public message in the virtual classroom chat.
 
 ## Example
 
 ```json
 {
    "actor": {
-      "objectType": "Agent",
       "account": {
          "name": "john",
          "homePage": "http://gaiax-virtualclassroom.org"
       }
    },
    "verb": {
-      "id": "http://adlnet.gov/expapi/verbs/posted"
+      "id": "https://w3id.org/xapi/acrossx/verbs/posted"
    },
    "object": {
-      "objectType": "Activity",
       "id": "http://gaiax.org/xapi/activities/f3757ec4-e427-4e3e-a934-fbccdd440a32",
       "definition": {
          "type": "https://w3id.org/xapi/acrossx/activities/message",
@@ -29,30 +27,42 @@ A participant has posted a public message in a chat.
       }
    },
    "context": {
-      "extensions": {
-         "http://id.tincanapi.com/activitytype/chat-channel": "uuid://1a784f01-ec6a-4fa1-a95a-8c72280c4320"
-      },
+      "registration": "4eb0e063-669b-479a-86b3-f9be9ac88a1d",
       "contextActivities": {
          "parent": [
             {
                "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
                "definition": {
-                  "type": "http://id.tincanapi.com/activitytype/webinar",
-                  "name": {
-                     "en": "Demonstration webinar"
-                  }
+                  "type": "http://id.tincanapi.com/activitytype/webinar"
                }
             }
          ],
          "category": [
             {
-               "id": "http://schema.dases.eu/xapi/profile/virtual-classroom/templates/posted-public-message",
+               "id": "https://w3id.org/xapi/virtual-classroom",
                "definition": {
                   "type": "http://adlnet.gov/expapi/activities/profile"
                }
             }
          ]
+      },
+      "extensions": {
+         "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"
       }
-   }
+   },
+   "timestamp": "2016-06-09T15:34:26.887Z"
 }
 ```
+
+## Rules
+
+- `verb.id`: INCLUDED, must be `https://w3id.org/xapi/acrossx/verbs/posted`
+- `object.definition.type`: INCLUDED, must be `https://w3id.org/xapi/acrossx/activities/message`.
+- `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
+- `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
+- `context.contextActivities.parent`: MUST be the virtual classroom activity.
+- `context.contextActivities.category`: MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
+- `timestamp`: INCLUDED
+
+
+
