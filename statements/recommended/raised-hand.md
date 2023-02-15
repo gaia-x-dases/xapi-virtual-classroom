@@ -9,48 +9,51 @@ A user has raised the hand to take part in the discussion in the virtual classro
 ```json
 {
    "actor": {
-      "objectType": "Agent",
       "account": {
          "name": "john",
          "homePage": "http://gaiax-virtualclassroom.org"
       }
    },
    "verb": {
-      "id": "http://schema.dases.eu/xapi/profile/virtual-classroom/verb/raised-hand"
+      "id": "https://w3id.org/xapi/virtual-classroom/verbs/raised-hand"
    },
    "object": {
-      "objectType": "Agent",
-      "account": {
-         "name": "john",
-         "homePage": "http://gaiax-virtualclassroom.org"
+      "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
+      "definition": {
+         "type": "http://id.tincanapi.com/activitytype/webinar",
+         "name": {
+            "en": "xAPI 101"
+         }
       }
    },
    "context": {
-      "extensions": {
-         "http://schema.dases.eu/xapi/profile/virtual-classroom/extension/micro-activated": false,
-         "http://schema.dases.eu/xapi/profile/virtual-classroom/extension/camera-activated": true
-      },
+      "registration": "4eb0e063-669b-479a-86b3-f9be9ac88a1d",
       "contextActivities": {
-         "parent": [
-            {
-               "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
-               "definition": {
-                  "type": "http://id.tincanapi.com/activitytype/webinar",
-                  "name": {
-                     "en": "Demonstration webinar"
-                  }
-               }
-            }
-         ],
          "category": [
             {
-               "id": "http://schema.dases.eu/xapi/profile/virtual-classroom/templates/raised-hand",
+               "id": "https://w3id.org/xapi/virtual-classroom",
                "definition": {
                   "type": "http://adlnet.gov/expapi/activities/profile"
                }
             }
          ]
+      },
+      "extensions": {
+         "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"
       }
-   }
+   },
+   "timestamp": "2016-06-09T15:34:26.887Z"
 }
 ```
+
+
+## Rules
+
+- `verb.id`: INCLUDED, must be `https://w3id.org/xapi/virtual-classroom/verbs/raised-hand`
+- `object.definition.type`: INCLUDED, must be `http://id.tincanapi.com/activitytype/webinar`.
+- `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
+- `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
+- `context.contextActivities.category`: MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
+- `timestamp`: INCLUDED
+
+
