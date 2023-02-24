@@ -54,10 +54,15 @@ A participant has posted a public message in the virtual classroom chat.
 }
 ```
 
+## Determining properties
+
+| Property  | Value         |
+|----------------|-----------------|
+| verb.id | Must be `https://w3id.org/xapi/acrossx/verbs/posted` |
+| object.type | Must be `https://w3id.org/xapi/acrossx/activities/message` |
+
 ## Rules
 
-- `verb.id`: INCLUDED, must be `https://w3id.org/xapi/acrossx/verbs/posted`
-- `object.definition.type`: INCLUDED, must be `https://w3id.org/xapi/acrossx/activities/message`.
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
 - `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
 - `context.contextActivities.parent`: MUST be the virtual classroom activity.

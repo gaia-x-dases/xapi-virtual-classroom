@@ -47,7 +47,7 @@ A user has lowered the hand in the discussion.
 }
 ```
 
-## Properties
+## Determining properties
 
 | Property  | Value         |
 |----------------|-----------------|

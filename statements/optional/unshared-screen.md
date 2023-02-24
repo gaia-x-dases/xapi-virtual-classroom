@@ -39,14 +39,15 @@ A user has unshared the screen.
          ]
       },
       "extensions": {
-         "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"
+         "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963",
+         "https://w3id.org/xapi/virtual-classroom/extensions/screen-shared": false
       }
    },
    "timestamp": "2016-06-09T15:34:26.887Z"
 }
 ```
 
-## Properties
+## Determining properties
 
 | Property  | Value         |
 |----------------|-----------------|

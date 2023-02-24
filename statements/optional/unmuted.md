@@ -47,7 +47,7 @@ A user has been unmuted. The action has been done by the participant itself or b
 }
 ```
 
-## Properties
+## Determining properties
 
 | Property  | Value         |
 |----------------|-----------------|

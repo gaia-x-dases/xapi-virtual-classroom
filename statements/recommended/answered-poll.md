@@ -77,10 +77,15 @@ A participant answered to a poll question.
 }
 ```
 
+## Determining properties
+
+| Property  | Value         |
+|----------------|-----------------|
+| verb.id | Must be `http://adlnet.gov/expapi/verbs/answered` |
+| object.type | Must be `http://adlnet.gov/expapi/activities/cmi.interaction` |
 
 ## Rules
 
-- `verb.id`: INCLUDED, must be `http://adlnet.gov/expapi/verbs/answered`
 - `object.definition`: CMI interaction, including a content type set to `http://adlnet.gov/expapi/activities/cmi.interaction` and other related properties as described in the xAPI specification.
 - `result.response`: INCLUDED, must be consistent with the `correctResponsesPattern` format in case of multiple answers (`[,]` is used as a separator).
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.

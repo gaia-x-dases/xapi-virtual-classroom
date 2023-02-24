@@ -50,10 +50,12 @@ The virtual classroom session has terminated. The session ends when the last par
 }
 ```
 
-## Properties
+## Determining properties
 
-- `object.definition.type`: INCLUDED, must be `http://id.tincanapi.com/activitytype/webinar`.
-- `verb.id`: INCLUDED, must be `http://adlnet.gov/expapi/verbs/terminated`.
+| Property  | Value         |
+|----------------|-----------------|
+| verb.id | Must be `http://adlnet.gov/expapi/verbs/terminated` |
+| object.type | Must be `http://id.tincanapi.com/activitytype/webinar` |
 
 ## Rules
 

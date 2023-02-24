@@ -46,10 +46,12 @@ A participant has left the virtual classroom session.
 }
 ```
 
-## Properties
+## Determining properties
 
-- `object.definition.type`: INCLUDED, must be `http://id.tincanapi.com/activitytype/webinar`.
-- `verb.id`: INCLUDED, must be `http://activitystrea.ms/leave`.
+| Property  | Value         |
+|----------------|-----------------|
+| verb.id | Must be `http://activitystrea.ms/leave` |
+| object.type | Must be `http://id.tincanapi.com/activitytype/webinar` |
 
 ## Rules
 

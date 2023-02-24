@@ -48,7 +48,7 @@ A participant has been muted. The action has been done by the participant itself
 }
 ```
 
-## Properties
+## Determining properties
 
 | Property  | Value         |
 |----------------|-----------------|

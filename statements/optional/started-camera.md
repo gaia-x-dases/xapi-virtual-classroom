@@ -47,7 +47,7 @@ A user has started the camera. The action has been done by the participant itsel
 }
 ```
 
-## Properties
+## Determining properties
 
 | Property  | Value         |
 |----------------|-----------------|

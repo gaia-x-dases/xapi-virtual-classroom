@@ -47,6 +47,12 @@ A participant shared the screen on a given virtual classroom session.
 }
 ```
 
+## Determining properties
+
+| Property  | Value         |
+|----------------|-----------------|
+| verb.id | Must be `http://adlnet.gov/expapi/verbs/interacted` |
+| object.type | Must be `http://id.tincanapi.com/activitytype/webinar` |
 
 ## Rules
 

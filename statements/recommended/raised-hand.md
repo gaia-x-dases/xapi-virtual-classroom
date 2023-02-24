@@ -47,6 +47,12 @@ A user has raised the hand to take part in the discussion in the virtual classro
 }
 ```
 
+## Determining properties
+
+| Property  | Value         |
+|----------------|-----------------|
+| verb.id | Must be `http://adlnet.gov/expapi/verbs/interacted` |
+| object.type | Must be `http://id.tincanapi.com/activitytype/webinar` |
 
 ## Rules
 

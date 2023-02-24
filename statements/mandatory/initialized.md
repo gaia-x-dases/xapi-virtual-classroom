@@ -47,10 +47,12 @@ The virtual classroom session has started. The session is initialized when the f
 }
 ```
 
-## Properties
+## Determining properties
 
-- `verb.id`: INCLUDED, must be `http://adlnet.gov/expapi/verbs/initialized`
-- `object.definition.type`: INCLUDED, must be `http://id.tincanapi.com/activitytype/webinar`.
+| Property  | Value         |
+|----------------|-----------------|
+| verb.id | Must be `http://adlnet.gov/expapi/verbs/initialized` |
+| object.type | Must be `http://id.tincanapi.com/activitytype/webinar` |
 
 ## Rules
 
