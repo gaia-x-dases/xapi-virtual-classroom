@@ -16,7 +16,7 @@ All these statements are **MANDATORY** in order to comply with this profile.
 - [Joined](./statements/mandatory/joined.md)
 - [Left](./statements/mandatory/left.md)
 
-### Main interactions
+### Interactions
 
 These statements give an idea of what happened during a virtual classroom session, who interacted and how.
 This is highly valuable from a learning analytics perspective, for example to evaluate the engagement of learners
@@ -28,20 +28,13 @@ All these statements are **HIGHLY RECOMMENDED**.
 - [Raised hand](./statements/recommended/raised-hand.md)
 - [Answered poll](./statements/recommended/answered-poll.md)
 - [Posted public message](./statements/recommended/posted-public-message.md)
-
-### Other interactions
-
-These statements give more details on the interactions during a virtual classroom session.
-
-All these statements are **OPTIONAL**.
-
-- [Muted](./statements/optional/muted.md)
-- [Unmuted](./statements/optional/unmuted.md)
-- [Started camera](./statements/optional/started-camera.md)
-- [Stopped camera](./statements/optional/stopped-camera.md)
-- [Unshared screen](./statements/optional/unshared-screen.md)
-- [Lowered hand](./statements/optional/lowered-hand.md)
-- [Created poll](./statements/optional/created-poll.md)
+- [Muted](./statements/recommended/muted.md)
+- [Unmuted](./statements/recommended/unmuted.md)
+- [Started camera](./statements/recommended/started-camera.md)
+- [Stopped camera](./statements/recommended/stopped-camera.md)
+- [Unshared screen](./statements/recommended/unshared-screen.md)
+- [Lowered hand](./statements/recommended/lowered-hand.md)
+- [Created poll](./statements/recommended/created-poll.md)
 
 ## Contributors
 
