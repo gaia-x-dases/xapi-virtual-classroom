@@ -39,8 +39,8 @@ A user has raised the hand to take part in the discussion in the virtual classro
          ]
       },
       "extensions": {
-         "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963",
-         "https://w3id.org/xapi/virtual-classroom/extensions/raised-hand": true
+         "https://w3id.org/xapi/virtual-classroom/extensions/hand-raised": true,
+         "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"      
       }
    },
    "timestamp": "2016-06-09T15:34:26.887Z"
@@ -56,12 +56,8 @@ A user has raised the hand to take part in the discussion in the virtual classro
 
 ## Rules
 
-- `verb.id`: INCLUDED, must be `https://w3id.org/xapi/virtual-classroom/verbs/raised-hand`
-- `object.definition.type`: INCLUDED, must be `http://id.tincanapi.com/activitytype/webinar`.
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
-- `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
-- `context.extensions.https://w3id.org/xapi/virtual-classroom/extensions/raised-hand`: INCLUDED, boolean format, must be set to `True`.
 - `context.contextActivities.category`: MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
-- `timestamp`: INCLUDED
-
-
+- `context.extensions.https://w3id.org/xapi/virtual-classroom/extensions/hand-raised`: INCLUDED, boolean, must be set to `True`.
+- `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
+- `timestamp`: INCLUDED.

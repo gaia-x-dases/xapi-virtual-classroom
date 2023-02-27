@@ -39,9 +39,9 @@ A participant has joined the virtual classroom session.
          ]
       },
       "extensions": {
-         "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963",
          "https://w3id.org/xapi/virtual-classroom/extensions/camera-activated": true,
-         "https://w3id.org/xapi/virtual-classroom/extensions/micro-activated": false
+         "https://w3id.org/xapi/virtual-classroom/extensions/micro-activated": false,
+         "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"   
       }
    },
    "timestamp": "2016-06-09T15:34:26.887Z"
@@ -58,10 +58,9 @@ A participant has joined the virtual classroom session.
 ## Rules
 
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
-- `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
-- `context.extensions.https://w3id.org/xapi/virtual-classroom/extensions/camera-activated`: RECOMMENDED (level 3).
-- `context.extensions.https://w3id.org/xapi/virtual-classroom/extensions/micro-activated`: RECOMMENDED (level 3).
 - `context.contextActivities.category`: MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
+- `context.extensions.https://w3id.org/xapi/virtual-classroom/extensions/camera-activated`: RECOMMENDED, boolean.
+- `context.extensions.https://w3id.org/xapi/virtual-classroom/extensions/micro-activated`: RECOMMENDED, boolean.
+- `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
 - `timestamp`: INCLUDED.
 - This statement MUST also be sent for the person who started the virtual classroom (statement `initialized`). 
-

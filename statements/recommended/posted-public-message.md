@@ -64,10 +64,10 @@ A participant has posted a public message in the virtual classroom chat.
 ## Rules
 
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
-- `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
 - `context.contextActivities.parent`: MUST be the virtual classroom activity.
 - `context.contextActivities.category`: MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
-- `timestamp`: INCLUDED
+- `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
+- `timestamp`: INCLUDED.
 
 
 

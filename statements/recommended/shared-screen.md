@@ -56,13 +56,11 @@ A participant shared the screen on a given virtual classroom session.
 
 ## Rules
 
-- `verb.id`: INCLUDED, must be `http://adlnet.gov/expapi/verbs/interacted`.
-- `object.definition.type`: INCLUDED, must be `http://id.tincanapi.com/activitytype/webinar`.
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
-- `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
-- `context.extensions.https://w3id.org/xapi/virtual-classroom/extensions/screen-shared`: INCLUDED, boolean format, must be set to `True`.
 - `context.contextActivities.category`: MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
-- `timestamp`: INCLUDED
+- `context.extensions.https://w3id.org/xapi/virtual-classroom/extensions/screen-shared`: INCLUDED, boolean, must be set to `True`.
+- `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
+- `timestamp`: INCLUDED.
 
 
 
