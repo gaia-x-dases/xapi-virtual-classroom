@@ -34,7 +34,7 @@ All these statements are **HIGHLY RECOMMENDED**.
 - [Stopped camera](./statements/recommended/stopped-camera.md)
 - [Unshared screen](./statements/recommended/unshared-screen.md)
 - [Lowered hand](./statements/recommended/lowered-hand.md)
-- [Created poll](./statements/recommended/created-poll.md)
+- [Started poll](./statements/recommended/started-poll.md)
 
 ## Contributors
 
