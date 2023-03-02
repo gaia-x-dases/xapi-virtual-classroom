@@ -1,4 +1,4 @@
-# Created poll
+# Started poll
 
 ## Description
 
