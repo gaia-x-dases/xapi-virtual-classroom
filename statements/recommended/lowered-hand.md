@@ -20,7 +20,7 @@ A user has lowered the hand in the discussion.
    "object": {
       "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
       "definition": {
-         "type": "http://id.tincanapi.com/activitytype/webinar",
+         "type": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom",
          "name": {
             "en": "xAPI 101"
          }
@@ -52,7 +52,7 @@ A user has lowered the hand in the discussion.
 | Property  | Value         |
 |----------------|-----------------|
 | verb.id | Must be `http://adlnet.gov/expapi/verbs/interacted` |
-| object.type | Must be `http://id.tincanapi.com/activitytype/webinar` |
+| object.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
 
 ## Rules
 

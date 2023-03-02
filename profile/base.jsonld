@@ -159,7 +159,7 @@
                 "en": "The virtual classroom session has started.\nThe session is initialized when the first participant or an administrator session has entered the virtual classroom."
             },
             "verb": "http://adlnet.gov/expapi/verbs/initialized",
-            "objectActivityType": "http://id.tincanapi.com/activitytype/webinar",
+            "objectActivityType": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom",
             "rules": [
                 {
                     "location": "$.context.extensions['http://id.tincanapi.com/extension/planned-duration']",
@@ -182,7 +182,7 @@
                 "en": "The virtual classroom session has terminated.\nThe session ends when the last participant has left the classroom or when an administrator has ended the session."
             },
             "verb": "http://adlnet.gov/expapi/verbs/terminated",
-            "objectActivityType": "http://id.tincanapi.com/activitytype/webinar",
+            "objectActivityType": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom",
             "rules": [
                 {
                     "location": "$.result.duration",
@@ -201,7 +201,7 @@
                 "en": "A participant has joined the virtual classroom session."
             },
             "verb": "http://activitystrea.ms/join",
-            "objectActivityType": "http://id.tincanapi.com/activitytype/webinar",
+            "objectActivityType": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom",
             "rules": [
                 {
                     "location": "$.context.extensions['https://w3id.org/xapi/video/extensions/user-agent']",
@@ -228,7 +228,7 @@
                 "en": "A participant has left the virtual classroom session."
             },
             "verb": "http://activitystrea.ms/leave",
-            "objectActivityType": "http://id.tincanapi.com/activitytype/webinar"
+            "objectActivityType": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom"
         },
         {
             "id": "http://schema.dases.eu/xapi/profile/virtual-classroom/templates/muted",

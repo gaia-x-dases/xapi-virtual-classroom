@@ -56,7 +56,7 @@ A participant answered to a poll question.
             {
                "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
                "definition": {
-                  "type": "http://id.tincanapi.com/activitytype/webinar"
+                  "type": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom"
                }
             }
          ],
