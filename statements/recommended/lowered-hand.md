@@ -52,7 +52,7 @@ A user has lowered the hand in the discussion.
 | Property  | Value         |
 |----------------|-----------------|
 | verb.id | Must be `http://adlnet.gov/expapi/verbs/interacted` |
-| object.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
+| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
 
 ## Rules
 

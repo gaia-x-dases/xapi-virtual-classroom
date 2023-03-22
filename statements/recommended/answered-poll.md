@@ -82,7 +82,7 @@ A participant answered to a poll question.
 | Property  | Value         |
 |----------------|-----------------|
 | verb.id | Must be `http://adlnet.gov/expapi/verbs/answered` |
-| object.type | Must be `http://adlnet.gov/expapi/activities/cmi.interaction` |
+| object.definition.type | Must be `http://adlnet.gov/expapi/activities/cmi.interaction` |
 
 ## Rules
 

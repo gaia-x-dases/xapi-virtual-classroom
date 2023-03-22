@@ -52,7 +52,7 @@ A participant has been muted. The action has been done by the participant itself
 | Property  | Value         |
 |----------------|-----------------|
 | verb.id | Must be `http://adlnet.gov/expapi/verbs/interacted` |
-| object.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
+| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
 
 
 ## Rules

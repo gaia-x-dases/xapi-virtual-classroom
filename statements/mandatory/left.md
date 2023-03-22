@@ -51,7 +51,7 @@ A participant has left the virtual classroom session.
 | Property  | Value         |
 |----------------|-----------------|
 | verb.id | Must be `http://activitystrea.ms/leave` |
-| object.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
+| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
 
 ## Rules
 

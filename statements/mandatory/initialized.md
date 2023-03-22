@@ -52,7 +52,7 @@ The virtual classroom session has started. The session is initialized when the f
 | Property  | Value         |
 |----------------|-----------------|
 | verb.id | Must be `http://adlnet.gov/expapi/verbs/initialized` |
-| object.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
+| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
 
 ## Rules
 

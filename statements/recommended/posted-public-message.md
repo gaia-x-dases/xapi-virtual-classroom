@@ -59,7 +59,7 @@ A participant has posted a public message in the virtual classroom chat.
 | Property  | Value         |
 |----------------|-----------------|
 | verb.id | Must be `https://w3id.org/xapi/acrossx/verbs/posted` |
-| object.type | Must be `https://w3id.org/xapi/acrossx/activities/message` |
+| object.definition.type | Must be `https://w3id.org/xapi/acrossx/activities/message` |
 
 ## Rules
 

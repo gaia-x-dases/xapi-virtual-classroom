@@ -53,7 +53,7 @@ A participant has joined the virtual classroom session.
 | Property  | Value         |
 |----------------|-----------------|
 | verb.id | Must be `http://activitystrea.ms/join` |
-| object.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
+| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
 
 ## Rules
 

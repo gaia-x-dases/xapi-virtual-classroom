@@ -55,7 +55,7 @@ The virtual classroom session has terminated. The session ends when the last par
 | Property  | Value         |
 |----------------|-----------------|
 | verb.id | Must be `http://adlnet.gov/expapi/verbs/terminated` |
-| object.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
+| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
 
 ## Rules
 

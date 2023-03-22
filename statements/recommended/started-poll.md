@@ -78,7 +78,7 @@ A poll has been started in the virtual classroom in order to collect participant
 | Property  | Value         |
 |----------------|-----------------|
 | verb.id | Must be `http://adlnet.gov/expapi/verbs/asked` |
-| object.type | Must be `http://adlnet.gov/expapi/activities/cmi.interaction` |
+| object.definition.type | Must be `http://adlnet.gov/expapi/activities/cmi.interaction` |
 
 
 ## Rules
