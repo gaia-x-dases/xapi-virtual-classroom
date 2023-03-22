@@ -19,31 +19,33 @@ A poll has been started in the virtual classroom in order to collect participant
    },
    "object": {
       "id": "http://gaiax.org/xapi/activities/f3757ec4-e427-4e3e-a934-fbccdd440a32",
-      "description": {
+      "definition": {
+         "description": {
             "en-US": "Which e-Learning standard do you know?"
-        },
-        "type": "http://adlnet.gov/expapi/activities/cmi.interaction",
-        "interactionType": "choice",
-        "choices": [
+         },
+         "type": "http://adlnet.gov/expapi/activities/cmi.interaction",
+         "interactionType": "choice",
+         "choices": [
             {
-                "id": "scorm", 
-                "description": {
-                    "en-US": "SCORM"
-                }
+               "id": "scorm", 
+               "description": {
+                  "en-US": "SCORM"
+               }
             },
             {
-                "id": "xapi", 
-                "description": {
-                    "en-US": "xAPI"
-                }
+               "id": "xapi", 
+               "description": {
+                  "en-US": "xAPI"
+               }
             },
             {
-                "id": "lti", 
-                "description": {
-                    "en-US": "LTI"
-                }
+               "id": "lti", 
+               "description": {
+                  "en-US": "LTI"
+               }
             }
-        ]
+         ]
+      }   
    },
    "context": {
       "registration": "4eb0e063-669b-479a-86b3-f9be9ac88a1d",
