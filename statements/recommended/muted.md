@@ -15,7 +15,7 @@ A participant has been muted. The action has been done by the participant itself
       }
    },
    "verb": {
-      "id": "http://adlnet.gov/expapi/verbs/interacted"
+      "id": "https://w3id.org/xapi/virtual-classroom/verbs/muted"
    },
    "object": {
       "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
@@ -27,6 +27,12 @@ A participant has been muted. The action has been done by the participant itself
       }
    },
    "context": {
+      "instructor": {
+         "account": {
+            "name": "jane",
+            "homePage": "http://gaiax-virtualclassroom.org"
+         }
+      },
       "registration": "4eb0e063-669b-479a-86b3-f9be9ac88a1d",
       "contextActivities": {
          "category": [
@@ -39,7 +45,6 @@ A participant has been muted. The action has been done by the participant itself
          ]
       },
       "extensions": {
-         "https://w3id.org/xapi/virtual-classroom/extensions/micro-activated": false,
          "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"  
       }
    },
@@ -51,7 +56,7 @@ A participant has been muted. The action has been done by the participant itself
 
 | Property  | Value         |
 |----------------|-----------------|
-| verb.id | Must be `http://adlnet.gov/expapi/verbs/interacted` |
+| verb.id | Must be `https://w3id.org/xapi/virtual-classroom/verbs/muted` |
 | object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
 
 
@@ -59,6 +64,6 @@ A participant has been muted. The action has been done by the participant itself
 
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
 - `context.contextActivities.category`: INCLUDED, MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
-- `context.extensions.https://w3id.org/xapi/virtual-classroom/extensions/micro-activated`: INCLUDED, boolean, must be set to `False`.
+- `context.instructor`: OPTIONAL, MUST be present when a session administrator has muted the participant camera.
 - `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
 - `timestamp`: INCLUDED.

@@ -15,7 +15,7 @@ A user has raised the hand to take part in the discussion in the virtual classro
       }
    },
    "verb": {
-      "id": "http://adlnet.gov/expapi/verbs/interacted"
+      "id": "https://w3id.org/xapi/virtual-classroom/verbs/raised-hand"
    },
    "object": {
       "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
@@ -51,13 +51,12 @@ A user has raised the hand to take part in the discussion in the virtual classro
 
 | Property  | Value         |
 |----------------|-----------------|
-| verb.id | Must be `http://adlnet.gov/expapi/verbs/interacted` |
+| verb.id | Must be `https://w3id.org/xapi/virtual-classroom/verbs/raised-hand` |
 | object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
 
 ## Rules
 
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
 - `context.contextActivities.category`: INCLUDED, MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
-- `context.extensions.https://w3id.org/xapi/virtual-classroom/extensions/hand-raised`: INCLUDED, boolean, must be set to `True`.
 - `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
 - `timestamp`: INCLUDED.
