@@ -15,7 +15,7 @@ A user has raised the hand to take part in the discussion in the virtual classro
       }
    },
    "verb": {
-      "id": "https://w3id.org/xapi/virtual-classroom/verbs/raised-hand"
+      "id": "https://w3id.org/xapi/virtual-classroom/verbs/reacted"
    },
    "object": {
       "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
@@ -24,6 +24,11 @@ A user has raised the hand to take part in the discussion in the virtual classro
          "name": {
             "en": "xAPI 101"
          }
+      }
+   },   
+   "result": {
+      "extensions": {
+         "https://w3id.org/xapi/virtual-classroom/extensions/emoji": "U+1F590"
       }
    },
    "context": {
@@ -39,7 +44,6 @@ A user has raised the hand to take part in the discussion in the virtual classro
          ]
       },
       "extensions": {
-         "https://w3id.org/xapi/virtual-classroom/extensions/hand-raised": true,
          "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"      
       }
    },
@@ -49,9 +53,9 @@ A user has raised the hand to take part in the discussion in the virtual classro
 
 ## Determining properties
 
-| Property  | Value         |
-|----------------|-----------------|
-| verb.id | Must be `https://w3id.org/xapi/virtual-classroom/verbs/raised-hand` |
+| Property | Value |
+|---|---|
+| verb.id | Must be `https://w3id.org/xapi/virtual-classroom/verbs/reacted` |
 | object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
 
 ## Rules
@@ -59,4 +63,5 @@ A user has raised the hand to take part in the discussion in the virtual classro
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
 - `context.contextActivities.category`: INCLUDED, MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
 - `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
+- `result.extensions.https://w3id.org/xapi/virtual-classroom/extensions/emoji`: INCLUDED, Unicode, MUST be the unicode value for the 🖐️ (`hand raised`) emoji .
 - `timestamp`: INCLUDED.
