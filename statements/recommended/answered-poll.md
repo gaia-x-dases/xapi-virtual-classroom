@@ -84,15 +84,15 @@ A participant answered to a poll question.
 
 | Property | Value |
 |---|---|
-| `$.verb.id` | Must be `http://adlnet.gov/expapi/verbs/answered` |
-| `$.object.definition.type` | Must be `http://adlnet.gov/expapi/activities/cmi.interaction` |
+| `$.verb.id` | MUST be `http://adlnet.gov/expapi/verbs/answered` |
+| `$.object.definition.type` | MUST be `http://adlnet.gov/expapi/activities/cmi.interaction` |
 
 ## Rules
 
 - `$.object.definition`: CMI interaction, including a content type set to `http://adlnet.gov/expapi/activities/cmi.interaction` and other related properties as described in the xAPI specification.
-- `$.result.response`: INCLUDED, must be consistent with the `correctResponsesPattern` format in case of multiple answers (`[,]` is used as a separator).
-- `$.context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
+- `$.result.response`: INCLUDED, MUST be consistent with the `correctResponsesPattern` format in case of multiple answers (`[,]` is used as a separator).
+- `$.context.registration`: INCLUDED, MUST be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
 - `$.context.contextActivities.parent`: INCLUDED, MUST be the virtual classroom activity.
 - `$.context.contextActivities.category`: INCLUDED, MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
-- `$.context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
+- `$.context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, MUST be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
 - `$.timestamp`: INCLUDED.
