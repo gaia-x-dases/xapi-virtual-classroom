@@ -15,14 +15,14 @@ A user has started the camera. The action has been done by the participant itsel
       }
    },
    "verb": {
-      "id": "https://w3id.org/xapi/virtual-classroom/verbs/started-camera"
+      "id": "http://activitystrea.ms/start"
    },
    "object": {
-      "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
+      "id": "http://gaiax.org/xapi/activities/c9f4c663-ea5d-48f7-ac6c-4d3534562eed",
       "definition": {
-         "type": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom",
+         "type": "https://w3id.org/xapi/virtual-classroom/activity-types/camera",
          "name": {
-            "en": "xAPI 101"
+            "en": "John's camera"
          }
       }
    },
@@ -36,10 +36,20 @@ A user has started the camera. The action has been done by the participant itsel
                   "type": "http://adlnet.gov/expapi/activities/profile"
                }
             }
-         ]
+         ], 
+         "parent": [
+            {
+               "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
+               "definition": {
+                  "type": "https://w3id.org/xapi/virtual-classroom/activity-types/camera",
+                  "name": {
+                     "en": "xAPI 101"
+                  },
+               },
+            },
+         ],
       },
       "extensions": {
-         "https://w3id.org/xapi/virtual-classroom/extensions/camera-activated": true,
          "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"
       }
    },
@@ -49,10 +59,10 @@ A user has started the camera. The action has been done by the participant itsel
 
 ## Determining properties
 
-| Property  | Value         |
-|----------------|-----------------|
-| verb.id | Must be `https://w3id.org/xapi/virtual-classroom/verbs/stopped-camera` |
-| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
+| Property | Value |
+|---|---|
+| verb.id | Must be `http://activitystrea.ms/start` |
+| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/camera` |
 
 
 ## Rules

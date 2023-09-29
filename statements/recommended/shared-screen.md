@@ -15,14 +15,14 @@ A participant shared the screen on a given virtual classroom session.
       }
    },
    "verb": {
-      "id": "https://w3id.org/xapi/virtual-classroom/verbs/shared-screen"
+      "id": "http://activitystrea.ms/share"
    },
    "object": {
-      "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
+      "id": "http://gaiax.org/xapi/activities/f5e94b9d-06ee-4666-9367-00006dc1c699",
       "definition": {
-         "type": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom",
+         "type": "https://w3id.org/xapi/virtual-classroom/activity-types/screen",
          "name": {
-            "en": "xAPI 101"
+            "en": "John's screen"
          }
       }
    },
@@ -36,10 +36,20 @@ A participant shared the screen on a given virtual classroom session.
                   "type": "http://adlnet.gov/expapi/activities/profile"
                }
             }
+         ],
+         "parent": [
+            {
+               "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
+               "definition": {
+                  "type": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom",
+                  "name": {
+                     "en": "xAPI 101"
+                  }
+               }
+            }
          ]
       },
       "extensions": {
-         "https://w3id.org/xapi/virtual-classroom/extensions/screen-shared": true,
          "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"
       }
    },
@@ -49,10 +59,10 @@ A participant shared the screen on a given virtual classroom session.
 
 ## Determining properties
 
-| Property  | Value         |
-|----------------|-----------------|
-| verb.id | Must be `https://w3id.org/xapi/virtual-classroom/verbs/shared-screen` |
-| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
+| Property | Value |
+|---|---|
+| verb.id | Must be `http://activitystrea.ms/share` |
+| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/screen` |
 
 ## Rules
 

@@ -15,24 +15,18 @@ A user has stopped the camera. The action has been done by the participant itsel
       }
    },
    "verb": {
-      "id": "http://adlnet.gov/expapi/verbs/interacted"
+      "id": "https://w3id.org/xapi/virtual-classroom/verbs/stopped"
    },
    "object": {
       "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
       "definition": {
-         "type": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom",
+         "type": "https://w3id.org/xapi/virtual-classroom/activity-types/camera",
          "name": {
-            "en": "xAPI 101"
+            "en": "John's camera"
          }
       }
    },
    "context": {
-      "instructor": {
-         "account": {
-            "name": "jane",
-            "homePage": "http://gaiax-virtualclassroom.org"
-         }
-      },
       "registration": "4eb0e063-669b-479a-86b3-f9be9ac88a1d",
       "contextActivities": {
          "category": [
@@ -45,7 +39,6 @@ A user has stopped the camera. The action has been done by the participant itsel
          ]
       },
       "extensions": {
-         "https://w3id.org/xapi/virtual-classroom/extensions/camera-activated": false,
          "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"
       }
    },
@@ -55,16 +48,15 @@ A user has stopped the camera. The action has been done by the participant itsel
 
 ## Determining properties
 
-| Property  | Value         |
-|----------------|-----------------|
-| verb.id | Must be `https://w3id.org/xapi/virtual-classroom/verbs/stopped-camera` |
-| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
+| Property | Value |
+|---|---|
+| verb.id | Must be `https://w3id.org/xapi/virtual-classroom/verbs/stopped` |
+| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/camera` |
 
 
 ## Rules
 
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
 - `context.contextActivities.category`: INCLUDED, MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
-- `context.instructor`: OPTIONAL, MUST be present when a session administrator has stopped the participant camera.
 - `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
 - `timestamp`: INCLUDED.

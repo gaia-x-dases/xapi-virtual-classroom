@@ -15,24 +15,18 @@ A user has unshared the screen.
       }
    },
    "verb": {
-      "id": "https://w3id.org/xapi/virtual-classroom/verbs/unshared-screen"
+      "id": "http://activitystrea.ms/unshare"
    },
    "object": {
-      "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
+      "id": "http://gaiax.org/xapi/activities/f5e94b9d-06ee-4666-9367-00006dc1c699",
       "definition": {
-         "type": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom",
+         "type": "https://w3id.org/xapi/virtual-classroom/activity-types/screen",
          "name": {
-            "en": "xAPI 101"
+            "en": "John's screen"
          }
       }
    },
    "context": {
-      "instructor": {
-         "account": {
-            "name": "jane",
-            "homePage": "http://gaiax-virtualclassroom.org"
-         }
-      },
       "registration": "4eb0e063-669b-479a-86b3-f9be9ac88a1d",
       "contextActivities": {
          "category": [
@@ -42,10 +36,20 @@ A user has unshared the screen.
                   "type": "http://adlnet.gov/expapi/activities/profile"
                }
             }
+         ],
+         "parent": [
+            {
+               "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
+               "definition": {
+                  "type": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom",
+                  "name": {
+                     "en": "xAPI 101"
+                  }
+               }
+            }
          ]
       },
       "extensions": {
-         "https://w3id.org/xapi/virtual-classroom/extensions/screen-shared": false,
          "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"
          
       }
@@ -56,16 +60,15 @@ A user has unshared the screen.
 
 ## Determining properties
 
-| Property  | Value         |
-|----------------|-----------------|
-| verb.id | Must be `https://w3id.org/xapi/virtual-classroom/verbs/unshared-screen` |
-| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
+| Property | Value |
+|---|---|
+| verb.id | Must be `http://activitystrea.ms/unshare` |
+| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/screen` |
 
 
 ## Rules
 
 - `context.registration`: INCLUDED, must be the same for all the statements of a planned session, even when the virtual classroom is relaunched for technical reasons.
 - `context.contextActivities.category`: INCLUDED, MUST contain an activity with the `https://w3id.org/xapi/virtual-classroom` id.
-- `context.instructor`: OPTIONAL, MUST be present when a session administrator has stopped the screen sharing of a participant.
 - `context.extensions.https://w3id.org/xapi/cmi5/context/extensions/sessionid`: INCLUDED, UUID format, must be the same for all the statements from `initialized` to `terminated` (i.e. technical session).
 - `timestamp`: INCLUDED.

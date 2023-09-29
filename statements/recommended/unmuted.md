@@ -15,14 +15,14 @@ A user has been unmuted. The action has been done by the participant itself or b
       }
    },
    "verb": {
-      "id": "http://adlnet.gov/expapi/verbs/interacted"
+      "id": "http://activitystrea.ms/start"
    },
    "object": {
       "id": "http://gaiax.org/xapi/activities/e59490e1-ddf2-4c43-bfdc-14e274abc106",
       "definition": {
-         "type": "https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom",
+         "type": "https://w3id.org/xapi/virtual-classroom/activity-types/micro",
          "name": {
-            "en": "xAPI 101"
+            "en": "John's micro"
          }
       }
    },
@@ -39,7 +39,6 @@ A user has been unmuted. The action has been done by the participant itself or b
          ]
       },
       "extensions": {
-                  "https://w3id.org/xapi/virtual-classroom/extensions/micro-activated": true,
          "https://w3id.org/xapi/cmi5/context/extensions/sessionid": "c7b6f0a9-482c-4c03-acc1-548289126963"
       }
    },
@@ -49,10 +48,10 @@ A user has been unmuted. The action has been done by the participant itself or b
 
 ## Determining properties
 
-| Property  | Value         |
-|----------------|-----------------|
-| verb.id | Must be `https://w3id.org/xapi/virtual-classroom/verbs/muted` |
-| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/virtual-classroom` |
+| Property | Value |
+|---|---|
+| verb.id | Must be `http://activitystrea.ms/start` |
+| object.definition.type | Must be `https://w3id.org/xapi/virtual-classroom/activity-types/micro` |
 
 
 ## Rules
