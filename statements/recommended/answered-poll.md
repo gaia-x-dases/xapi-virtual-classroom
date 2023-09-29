@@ -82,8 +82,8 @@ A participant answered to a poll question.
 
 ## Determining properties
 
-| Property  | Value         |
-|----------------|-----------------|
+| Property | Value |
+|---|---|
 | verb.id | Must be `http://adlnet.gov/expapi/verbs/answered` |
 | object.definition.type | Must be `http://adlnet.gov/expapi/activities/cmi.interaction` |
 
